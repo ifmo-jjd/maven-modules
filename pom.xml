@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- правила создания jar файлов описываются в pom файлах дочерних модулей -->
+
+    <!-- POM файл родительского модуля -->
+
+    <groupId>ru.ifmo</groupId>
+    <artifactId>maven-modules</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <modules> <!-- необходимо перечислить все дочерние модули -->
+        <module>client</module> <!-- artifactId дочернего модуля -->
+        <module>common</module> <!-- artifactId дочернего модуля -->
+    </modules>
+
+    <packaging>pom</packaging> <!-- указывается для родительского модуля в модульной сборке -->
+
+    <!-- перечисляем общие для всех дочерних модулей библиотеки и плагины -->
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>

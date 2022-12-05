@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- POM файл дочернего модуля -->
+
+    <!-- указание на GAV родительского модуля-->
+    <parent>
+        <artifactId>maven-modules</artifactId>
+        <groupId>ru.ifmo</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>common</artifactId> <!-- идентификатор дочернего модуля,
+                        groupId и version в данном случае наследуются от родителя-->
+
+    <!-- зависимости, необходимые текущему модулю,
+         кроме перечисленных в родительском POM файле -->
+
+
+
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+</project>
